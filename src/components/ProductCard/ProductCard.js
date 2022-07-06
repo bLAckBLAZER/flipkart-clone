@@ -3,7 +3,7 @@ export const ProductCard = ({ product }) => {
 
   return (
     <div className="flex flex-col border-2 border-black-600  max-w-175 p-2">
-      <figure className="w-175 h-96">
+      <figure className="w-175 h-96 m-auto">
         <img src={image} className="object-contain h-full"></img>
       </figure>
 

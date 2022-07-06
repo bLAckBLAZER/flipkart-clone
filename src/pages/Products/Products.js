@@ -45,7 +45,7 @@ export const Products = () => {
   }, [filters, products]);
 
   return (
-    <main className="flex-1 grid grid-cols-5 gap-2">
+    <main className="flex-1 grid grid-cols-5 gap-2 pt-2 bg-[#F0F2F5]">
       <Filters filters={filters} setFilters={setFilters} />
       <ProductList products={filteredProducts} filters={filters} />
     </main>

@@ -25,13 +25,17 @@ export const Filters = ({ filters, setFilters }) => {
   };
 
   return (
-    <aside className="flex flex-col">
-      <button
-        className="text-blue-600"
-        onClick={() => setFilters(defaultFilters)}
-      >
-        CLEAR ALL
-      </button>
+    <aside className="flex flex-col p-4 shadow-sm bg-white">
+      <div className="flex justify-between">
+        <h1 className="text-xl font-bold">Filters</h1>
+        <button
+          className="text-blue-600"
+          onClick={() => setFilters(defaultFilters)}
+        >
+          CLEAR ALL
+        </button>
+      </div>
+
       <ul>
         <li className="my-3">
           <h2 className="mb-1">Sort By</h2>
